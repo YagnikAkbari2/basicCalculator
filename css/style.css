@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+/* body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,4 +41,116 @@ input {
 body .container div:nth-child(3) {
   display: flex;
   flex-direction: row;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: block;
+  margin: auto;
+  max-width: 1100px;
+  height: 100vh;
+}
+.display {
+  display: block;
+  margin: 10px auto;
+  padding: 5rem;
+  width: 500px;
+  padding: 20px 0;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.btn {
+  padding: 2rem 2rem;
+  background-color: #555;
+  color: white;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+.btn:hover {
+  border: 1px solid white;
+  box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black;
+}
+.buttons {
+  max-width: 500px;
+  display: grid;
+  grid-template-areas:
+    "btn-clear btn-mod btn-Delete btn-div"
+    "btn-7 btn-8 btn-9 btn-mul"
+    "btn-4 btn-5 btn-6 btn-sub"
+    "btn-1 btn-2 btn-3 btn-add"
+    "btn-Double-Zero btn-0 btn-dot btn-equal";
+  grid-gap: 1rem;
+  margin: 50px auto;
+}
+.btn-clear {
+  grid-area: btn-clear;
+}
+.btn-mod {
+  grid-area: btn-mod;
+}
+.btn-Delete {
+  grid-area: btn-Delete;
+}
+.btn-div {
+  grid-area: btn-div;
+}
+.btn-7 {
+  grid-area: btn-7;
+}
+.btn-8 {
+  grid-area: btn-8;
+}
+.btn-9 {
+  grid-area: btn-9;
+}
+.btn-mul {
+  grid-area: btn-mul;
+}
+.btn-4 {
+  grid-area: btn-4;
+}
+.btn-5 {
+  grid-area: btn-5;
+}
+.btn-6 {
+  grid-area: btn-6;
+}
+.btn-sub {
+  grid-area: btn-sub;
+}
+.btn-1 {
+  grid-area: btn-1;
+}
+.btn-2 {
+  grid-area: btn-2;
+}
+.btn-3 {
+  grid-area: btn-3;
+}
+.btn-add {
+  grid-area: btn-add;
+}
+.btn-Double-Zero {
+  grid-area: btn-Double-Zero;
+}
+.btn-0 {
+  grid-area: btn-0;
+}
+.btn-dot {
+  grid-area: btn-dot;
+}
+.btn-equal {
+  grid-area: btn-equal;
+}
+.card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background: white;
 }
