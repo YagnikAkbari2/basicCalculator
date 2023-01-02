@@ -3,46 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: aquamarine;
-  font-size: 2rem;
-}
-body .container div {
-  display: flex;
-  flex-direction: column;
-}
-.container {
-  display: block;
-  margin: 50px auto;
-  width: 50vw;
-  height: 100vh;
-}
-input {
-  background: transparent;
-  border: 2px solid black;
-  padding: 0.75rem 1rem;
-  border-radius: 10px;
-}
-.btn {
-  display: block;
-  background: #333;
-  color: #fff;
-  padding: 1rem 4rem;
-  margin: 2rem 0.75rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
-body .container div:nth-child(3) {
-  display: flex;
-  flex-direction: row;
-} */
-
 body {
   margin: 0;
   padding: 0;

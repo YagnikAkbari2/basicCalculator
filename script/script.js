@@ -1,34 +1,5 @@
-// "use strict";
-// const number1 = document.querySelector(".number1");
-// const number2 = document.querySelector(".number2");
-// const add = document.querySelector(".btn-add");
-// const substract = document.querySelector(".btn-sub");
-// const multiply = document.querySelector(".btn-mul");
-// const dividion = document.querySelector(".btn-div");
-// const modulo = document.querySelector(".btn-mod");
-// const btnCalc = document.querySelector(".btn-calc");
-// const output = document.querySelector(".output");
+"use strict";
 
-// add.addEventListener("click", function () {
-//   const ans = Number(number1.value) + Number(number2.value);
-//   output.value = ans;
-// });
-// substract.addEventListener("click", function () {
-//   const ans = Number(number1.value) - Number(number2.value);
-//   output.value = ans;
-// });
-// multiply.addEventListener("click", function () {
-//   const ans = Number(number1.value) * Number(number2.value);
-//   output.value = ans;
-// });
-// dividion.addEventListener("click", function () {
-//   const ans = Number(number1.value) / Number(number2.value);
-//   output.value = ans;
-// });
-// modulo.addEventListener("click", function () {
-//   const ans = Number(number1.value) % Number(number2.value);
-//   output.value = ans;
-// });
 const btnZero = document.querySelector(".btn-0");
 const btn1 = document.querySelector(".btn-1");
 const btn2 = document.querySelector(".btn-2");
@@ -57,7 +28,6 @@ let num1;
 function init() {
   string1 = "";
   num1 = 0;
-  press = "";
 }
 init();
 btnZero.addEventListener("click", function (e) {
@@ -117,47 +87,27 @@ btnDelete.addEventListener("click", function () {
 });
 
 btnAdd.addEventListener("click", function () {
-  num1 = Number(string1);
-  input.value = "";
-  string1 = "";
-  press = "+";
+  string1 += "+";
+  input.value = string1;
 });
 btnSub.addEventListener("click", function () {
-  num1 = Number(string1);
-  input.value = "";
-  string1 = "";
-  press = "-";
+  string1 += "-";
+  input.value = string1;
 });
 btnMul.addEventListener("click", function () {
-  num1 = Number(string1);
-  input.value = "";
-  string1 = "";
-  press = "*";
+  string1 += "*";
+  input.value = string1;
 });
 btnDiv.addEventListener("click", function () {
-  num1 = Number(string1);
-  input.value = "";
-  string1 = "";
-  press = "/";
+  string1 += "/";
+  input.value = string1;
 });
 btnMod.addEventListener("click", function () {
-  num1 = Number(string1);
-  input.value = "";
-  string1 = "";
-  press = "%";
+  string1 += "%";
+  input.value = string1;
 });
 btnEqual.addEventListener("click", function () {
-  if (press === "+") {
-    num1 = num1 + Number(string1);
-  } else if (press === "-") {
-    num1 = num1 - Number(string1);
-  } else if (press === "*") {
-    num1 = num1 * Number(string1);
-  } else if (press === "/") {
-    num1 = num1 / Number(string1);
-  } else if (press === "%") {
-    num1 = num1 % Number(string1);
-  }
+  num1 = eval(string1);
   input.value = num1;
   init();
 });
