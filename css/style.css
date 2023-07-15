@@ -11,28 +11,32 @@ body {
 .container {
   display: block;
   margin: auto;
-  max-width: 1100px;
-  height: 100vh;
+  max-width: 550px;
+  background: #ddd;
+  padding: 1.75rem;
+  padding-bottom: 1px;
+  margin-top: 6px;
+  border-radius: 10px;
 }
 .display {
   display: block;
   margin: 10px auto;
   padding: 5rem;
   width: 500px;
-  padding: 20px 0;
+  padding: 20px 10px;
   border: 2px solid black;
   border-radius: 5px;
+  font-size: 2rem;
+  text-align: right;
 }
 .btn {
   padding: 2rem 2rem;
-  background-color: #555;
-  color: white;
   transition: all 0.1s ease-in-out;
   position: relative;
-}
-.btn:hover {
-  border: 1px solid white;
-  box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black;
+  border-radius: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
 }
 .buttons {
   max-width: 500px;
@@ -57,6 +61,7 @@ body {
 }
 .btn-div {
   grid-area: btn-div;
+  background-color: aliceblue;
 }
 .btn-7 {
   grid-area: btn-7;
@@ -69,6 +74,7 @@ body {
 }
 .btn-mul {
   grid-area: btn-mul;
+  background-color: aliceblue;
 }
 .btn-4 {
   grid-area: btn-4;
@@ -81,6 +87,7 @@ body {
 }
 .btn-sub {
   grid-area: btn-sub;
+  background-color: aliceblue;
 }
 .btn-1 {
   grid-area: btn-1;
@@ -93,6 +100,7 @@ body {
 }
 .btn-add {
   grid-area: btn-add;
+  background-color: aliceblue;
 }
 .btn-Double-Zero {
   grid-area: btn-Double-Zero;
@@ -105,6 +113,7 @@ body {
 }
 .btn-equal {
   grid-area: btn-equal;
+  background-color: goldenrod;
 }
 .card {
   position: absolute;
